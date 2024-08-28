@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title> 
+    <script>
+        function getParameterByName(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        window.onload = function() {
+            const imageUrl = getParameterByName('image');
+            if (imageUrl) {
+                document.getElementById('imageDiv').innerHTML = `<img src="${imageUrl}" alt="Crop Image">`;
+            } else {
+                document.getElementById('imageDiv').innerHTML = 'Please try again. No image available';
+            }
+        };
+    </script>
+</head>
+<body>
+    <div id="fill">
+        <p style="font-size: larger; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Here is the image of most suitable crop...</p>
+    </div>
+    <div id="imageDiv" class="display">
+    </div>
+</body>
+</html>

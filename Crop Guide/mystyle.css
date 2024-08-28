@@ -1,0 +1,247 @@
+@import url('https://fornta.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.main
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100h;
+  background: #939179;
+}
+.main h2
+{
+  position: relative;
+  font-size: 5vw;
+  color: #939179;
+  -webkit-text-stroke: 0.3vw #ffffff;  
+  text-transform: uppercase;
+}
+.main h2::before
+{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  -webkit-text-stroke: 0.3vw #ffffff;
+  border-right: 2px solid ;
+  overflow: hidden;
+  animation: animate 5s linear infinite;
+}
+.main p{
+  font-size: x-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+@keyframes animate{
+    0%,10%,100%{
+      width : 0;
+    }
+    70%,90%{
+      width:100%;
+  }
+}
+.welcome .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://tse4.mm.bing.net/th?id=OIP.MNJV-yGMxf5S1_a9PocW-wHaEK&pid=Api&P=0&h=180");
+    background-size: cover;
+    background-position: center;
+  }
+  .welcome .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .welcome .logo{
+    width: 120px;
+    cursor: pointer;
+  }
+  .welcome .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  .welcome .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .welcome .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #939179;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .welcome .navbar ul li:hover::after{
+    width: 100%;
+  }
+  
+  .welcome .content{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+  }
+    
+  .welcome .content h1{
+    font-size: 70px;
+    margin-top: 80px;
+  }
+  .welcome .content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  
+  .welcome button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #939179;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .welcome span{
+    background: #939179;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .welcome button:hover span{
+    width: 100%;
+  }
+  
+  .welcome button:hover{
+   border:none;
+  }
+  .about .des {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://tse4.mm.bing.net/th?id=OIP.QQVjJaml_N0-IQp1m6D_TgHaE7&pid=Api&P=0&h=180");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about .des p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
+  }
+  .about .des h1{ 
+    color:yellowgreen;
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  .last{
+  background: #939179;
+  }
+  *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+footer{
+  background-color: #939179;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size : 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.footerNav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color : #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin:0px 5px;
+}
+
+@media(max-width: 700px){
+  .footerNav ul{
+    flex-direction: column;
+  }
+  .footerNav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final page</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image:url('https://wallpapercave.com/wp/wp3515764.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            color: #333;
+        }
+        body{
+        	background-color: rgba(255, 255, 255, 0.2);
+  	        backdrop-filter: blur(10px);
+     	    width: 100%;
+     	    max-width: 430px;
+     	    margin: 50px auto;
+  	        padding: 30px;  
+      	    border-radius: 15px;
+      	    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); 
+    	    color: #0C134F;     
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }    
+        input[type="text"] {
+            width: 100%;
+            height : 30px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            }
+        input[type=text]:focus {
+            background-color:beige;
+        }
+        select{
+            width: 100%;
+            height : 30px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        button  a{
+            text-decoration: none;
+            color:black;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+
+        }
+        input[type="button"]:hover {
+            background-color: #45a049;
+            width:90%;
+            height:35px;
+        }
+    </style>
+
+</head>
+<body>
+<center>
+    
+         <font style="font-family:Arial, sans-serif;color:2A184E;"><h1><b>CROP GUIDE</b></h1></font>
+        <label style="color:#4d0000;" for="State">State</label>
+        <select id="State" name="State" style="border-color:#000000;border-radius:15px; " id="State" name="State" required>
+            <option value="">Select your State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="West Bengal">West Bengal</option>
+        </select><br><br>
+        <label style="color:#4d0000;" for="Season">Season</label>
+        <select id="Season" name="Season" style="border-color:#000000;border-radius:15px;" id="Season" name="Season" required>
+            <option value="">Select the Season</option>
+            <option value="Kharif">Kharif</option>
+            <option value="Rabi">Rabi</option>
+            <option value="Zaid">Zaid</option>
+        </select><br><br>
+
+        <label style="color:#4d0000;" for="Land">Land (in acres) </label>
+        <input type="text" style="border-color:#000000a1;border-radius:15px;" placeholder="No.of acres" id="Land" name="Land" required><br><br>
+
+        <label style="color:#4d0000;" for="Budget">Budget (in rupees)</label>
+        <input type="text" style="border-color:#000000a1;border-radius:15px;" placeholder="Overall budget" id="Budget" name="" required><br><br>
+        <br><br>
+
+        <button onclick=perform()>Predict</button>
+</center>
+<script src="data.js"></script>
+
+</body>
+</html>
