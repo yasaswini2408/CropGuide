@@ -14,43 +14,43 @@ const s=["Andhra Pradesh","Goa","Karnataka","Kerala","Tamil Nadu","Telangana"]
 if (ip2 === "Kharif") {
     if (n.includes(ip1)) {
         if (ip3 >= 10 && ip4 > 50000) {
-            x = "../img/Sugarcane.png";
+            x = "img/Sugarcane.png";
         } else {
-            x = "../img/Rice.png"; 
+            x = "img/Rice.png"; 
         }
     } else if (s.includes(ip1)) {
         if (ip3 >= 10 && ip4 > 50000) {
-            x = "../img/Cotton.png";
+            x = "img/Cotton.png";
         } else {
-            x = "../img/Maize.png";
+            x = "img/Maize.png";
         }
     }
 } else if (ip2 === "Rabi") {
     if (n.includes(ip1)) {
         if (ip3 >= 10 && ip4 > 50000) {
-            x = "../img/Wheat.png";
+            x = "img/Wheat.png";
         } else {
-            x = "../img/Mustard.png";
+            x = "img/Mustard.png";
         }
     } else if (s.includes(ip1)) {
         if (ip3 >= 10 && ip4 > 50000) {
-            x = "../img/Banana.png";
+            x = "img/Banana.png";
         } else {
-            x = "../img/Chickpea.jpeg";
+            x = "img/Chickpea.jpeg";
         }
     }
 } else {
     if (n.includes(ip1)) {
         if (ip3 >= 10 && ip4 > 50000) {
-            x = "../img/Cucumber.png";
+            x = "img/Cucumber.png";
         } else {
-            x = "../img/Jute.png";
+            x = "img/Jute.png";
         }
     } else if (s.includes(ip1)) {
         if (ip3 >= 10 && ip4 > 50000) {
-            x = "../img/Pumpkin.png";
+            x = "img/Pumpkin.png";
         } else {
-            x = "../img/Tomato.png";
+            x = "img/Tomato.png";
         }
     }
 }
